@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(155, 155, 155);
+    padding: 20px;
+}
+
+.navList {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+}
+
+.links {
+    text-decoration: none;
+    color: black;
+}
