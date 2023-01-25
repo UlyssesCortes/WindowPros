@@ -1,0 +1,24 @@
+.servicesLink {
+    color: white;
+}
+
+.secStyleBtn {
+    color: white;
+}
+
+.servicesLink:hover {
+    border-bottom: solid 2px white;
+}
+
+.servicesSelected {
+    border-bottom: solid 2px white;
+}
+
+.whiteTittle {
+    color: white;
+}
+
+.secStyleBtnSignUp {
+    color: #FCA253;
+    background-color: white;
+}
