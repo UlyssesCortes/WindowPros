@@ -7,7 +7,9 @@ const OurClients = () => {
     return (
         <>
             <Header />
-            <h1>OurClients</h1>
+            <body>
+                <h1>OurClients</h1>
+            </body>
         </>
     )
 }

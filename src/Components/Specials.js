@@ -6,8 +6,11 @@ import Header from './Header';
 const Specials = () => {
     return (
         <>
-            <Header />
-            <h1>Specials</h1>
+            <body className='wave'>
+                <Header />
+                <h1>Specials</h1>
+            </body>
+
         </>
     )
 }

@@ -5,33 +5,61 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.nav {
+.navHome {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: rgba(255, 255, 255, 0.5); */
     height: 60px;
-    color: #000000;
-    font-weight: bold;
     padding: 2.5em;
-
     /* box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px; */
 }
 
-.navList {
+.navHeader {
+    display: flex;
+
+}
+
+.navListHome {
     display: flex;
     flex-direction: row;
     gap: 20px;
     list-style: none;
+    margin-left: 4em;
 }
 
-.title {
-    color: white;
+.titleHome {
+    color: black;
 }
 
-.links {
+.linksHome {
     text-decoration: none;
+    color: rgb(131, 131, 131);
+    padding: 1px;
+}
+
+.linksHome:hover {
+    border-bottom: solid 2px #FCA253;
+
+}
+
+.homeLInk {
+    border-bottom: solid 2px #FCA253;
+}
+
+.linkBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%;
+    text-decoration: none;
+    color: #FCA253;
+    padding: 10px;
+}
+
+.singUpBtn {
     color: white;
+    background-color: #FCA253;
+
 }
 
 .wave {
@@ -44,4 +72,9 @@
     height: 100%;
     background-image: url('./img/wave.svg');
     background-size: cover;
+}
+
+.navButton {
+    display: flex;
+    gap: 20px;
 }

@@ -6,8 +6,10 @@ import Header from './Header';
 const Services = () => {
     return (
         <>
-            <Header />
-            <h1>Services</h1>
+            <body className='wave'>
+                <Header />
+                <h1>Services</h1>
+            </body>
         </>
     )
 }

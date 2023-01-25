@@ -6,8 +6,11 @@ import Header from './Header';
 const ContactUs = () => {
     return (
         <>
-            <Header />
-            <h1>ContactUs</h1>
+            <body className='wave'>
+                <Header />
+                <h1>ContactUs</h1>
+            </body>
+
         </>
     )
 }
