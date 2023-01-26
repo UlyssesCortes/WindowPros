@@ -8,8 +8,10 @@ const Specials = () => {
     return (
         <>
             <body className='wave'>
+                <div className='waveOutline'></div>
+
                 <Header />
-                <h1>Specials</h1>
+                <h1 className='slogan'>Limited-Time Offers: Don't Miss Out!</h1>
             </body>
 
         </>

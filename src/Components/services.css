@@ -22,3 +22,11 @@
     color: #FCA253;
     background-color: white;
 }
+
+.slogan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: .6em;
+}

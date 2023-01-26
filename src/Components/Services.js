@@ -8,8 +8,9 @@ const Services = () => {
     return (
         <>
             <body className='wave'>
+                <div className='waveOutline'></div>
                 <Header />
-                <h1>Services</h1>
+                <h1 className='slogan'>Expert Solutions for All Your Needs</h1>
             </body>
         </>
     )

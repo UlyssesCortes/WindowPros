@@ -7,8 +7,9 @@ const ContactUs = () => {
     return (
         <>
             <body className='wave'>
+                <div className='waveOutline'></div>
                 <Header />
-                <h1>ContactUs</h1>
+                <h1 className='slogan'>Get in Touch with Us</h1>
             </body>
 
         </>
