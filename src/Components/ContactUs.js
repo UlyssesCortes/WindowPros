@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Header from './Header';
 import Spline from '@splinetool/react-spline';
 import './contact.css'
@@ -14,7 +13,7 @@ const ContactUs = () => {
 
                 <div className='contactFormSec'>
                     <div className='avatar'>
-                        <Spline scene="https://prod.spline.design/nO3fW5qBd6sKhKZL/scene.splinecode" />
+                        <Spline scene="https://prod.spline.design/wpLwgZHZEi4N2iWv/scene.splinecode" />
                     </div>
                     <form className='formSec'>
                         <section>
