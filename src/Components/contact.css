@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contactFormSec {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin-right: 20em;
+    flex-direction: row-reverse;
+    /* height: 40em; */
+    /* background-color: red; */
+}
+
+.avatar {
+    display: flex;
+    /* background-color: aliceblue; */
+    position: absolute;
+    flex-direction: row;
+    justify-content: start;
+    /* align-items: center; */
+    height: 60em;
+    width: 120%;
+}
+
+.formSec {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /* margin-right: 30em; */
+    flex-direction: column;
+    /* background-color: red; */
+    width: 40em;
+    height: 40em;
+}
