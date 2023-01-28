@@ -6,18 +6,13 @@
 
 .contactFormSec {
     display: flex;
-    justify-content: space-between;
-    margin-right: 20em;
     flex-direction: row-reverse;
-
 }
 
 .avatar {
     display: flex;
-
+    margin-right: 20em;
     position: absolute;
-    flex-direction: row;
-    justify-content: start;
     height: 60em;
     width: 120%;
 }
@@ -28,7 +23,70 @@
     position: relative;
     align-content: center;
     flex-direction: column;
-    width: 40em;
-    background-color: red;
-    height: 10em;
+    width: 45em;
+    margin: 15%;
+    height: 20em;
+    gap: 10px;
+
+}
+
+.topFormSec {
+    display: flex;
+    gap: 10px;
+}
+
+.nameInp,
+.emailInp {
+    padding: 12px 48px 12px 24px;
+    width: 50%;
+    border-radius: 20px;
+    height: 5em;
+    border: 1px rgb(189, 180, 180) solid;
+    outline: none;
+    transition: border .3s;
+    transition-timing-function: cubic-bezier(.21, .67, .91, .35);
+}
+
+.subInp {
+    width: 100%;
+    padding: 12px 48px 12px 24px;
+    border-radius: 20px;
+    height: 5em;
+    border: 1px rgb(189, 180, 180) solid;
+    outline: none;
+    transition: border .3s;
+    transition-timing-function: cubic-bezier(.21, .67, .91, .35);
+}
+
+.mesInp {
+    width: 100%;
+    padding: 12px 48px 12px 24px;
+    border-radius: 20px;
+    height: 20em;
+    border: 1px rgb(189, 180, 180) solid;
+    outline: none;
+    transition: border .3s;
+    transition-timing-function: cubic-bezier(.21, .67, .91, .35);
+}
+
+.nameInp:focus,
+.emailInp:focus,
+.subInp:focus,
+.mesInp:focus {
+    border: 1px rgb(236, 156, 27) solid;
+    transition-timing-function: cubic-bezier(.17, .67, .78, .55);
+}
+
+.sendBtn {
+    height: 18%;
+    border-radius: 20px;
+    background-color: #e7e7e7;
+    /* color: white; */
+    border: 1px rgb(189, 180, 180) solid;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.sendBtn:hover {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+
 }
