@@ -4,6 +4,7 @@ import Spline from '@splinetool/react-spline';
 import './contact.css'
 
 const ContactUs = () => {
+
     return (
         <>
             <body className='wave'>

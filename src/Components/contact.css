@@ -7,7 +7,8 @@
 .contactFormSec {
     display: flex;
     flex-direction: row-reverse;
-    margin-bottom: 20%;
+    /* margin-bottom: 20%; */
+    margin-top: -75px;
 }
 
 .avatar {
@@ -97,5 +98,12 @@
     z-index: -1;
     width: 100%;
     height: 60em;
+}
 
+
+
+@media only screen and (max-width: 600px) {
+    .contactFormSec {
+        margin-top: 0;
+    }
 }
