@@ -7,17 +7,17 @@
 .contactFormSec {
     display: flex;
     flex-direction: row-reverse;
-    /* margin-bottom: 20%; */
-    margin-top: -75px;
+    margin-top: -78px;
 }
 
 .avatar {
     display: flex;
     margin-right: 10em;
+    margin-top: 2em;
     position: absolute;
     height: 60em;
     width: 120%;
-
+    padding-bottom: 50px;
 }
 
 .formSec {
@@ -40,9 +40,10 @@
 .nameInp,
 .emailInp {
     padding: 12px 48px 12px 24px;
+    font-size: 1rem;
     width: 50%;
     border-radius: 20px;
-    height: 5em;
+    height: 4em;
     border: 1px rgb(189, 180, 180) solid;
     outline: none;
     transition: border .3s;
@@ -51,6 +52,7 @@
 
 .subInp {
     width: 100%;
+    font-size: 1rem;
     padding: 12px 48px 12px 24px;
     border-radius: 20px;
     height: 9em;
@@ -62,7 +64,8 @@
 
 .mesInp {
     width: 100%;
-    padding: 12px 48px 12px 24px;
+    font-size: 1rem;
+    padding: 12px 48px 120px 24px;
     border-radius: 20px;
     height: 20em;
     border: 1px rgb(189, 180, 180) solid;
@@ -82,6 +85,7 @@
 .sendBtn {
     height: 30%;
     border-radius: 20px;
+    font-size: 1rem;
     background-color: #f1dbc8;
     border: none;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
@@ -99,8 +103,6 @@
     width: 100%;
     height: 60em;
 }
-
-
 
 @media only screen and (max-width: 600px) {
     .contactFormSec {

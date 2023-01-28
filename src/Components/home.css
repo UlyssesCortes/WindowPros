@@ -27,22 +27,40 @@
 
 .titleHome {
     color: black;
-    letter-spacing: 2px;
-    text-shadow: 2px 7px 5px rgba(93, 93, 93, 0.08);
+    text-shadow: 2px 7px 5px rgba(93, 93, 93, 0.1);
 }
 
 .linksHome {
     text-decoration: none;
     color: rgb(131, 131, 131);
-    padding: 1px;
+    padding-bottom: 5px;
+    position: relative;
 }
 
-.linksHome:hover {
-    border-bottom: solid 2px #FCA253;
+.linksHome::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FCA253;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
 }
 
-.homeLInk {
+.linksHome:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#homeLink {
     border-bottom: solid 2px #FCA253;
+    text-decoration: none;
+    color: rgb(131, 131, 131);
+    padding-bottom: 2px;
+    position: relative;
 }
 
 .linkBtn {
@@ -55,22 +73,17 @@
     padding: 10px;
 }
 
+.signInBtn {
+    width: 85px;
+}
+
 .singUpBtn {
     color: white;
     background-color: #FCA253;
-
 }
 
-.wave {
-    display: flex;
-    justify-content: flex-start;
-    position: absolute;
-    display: inline-block;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    background-image: url('./img/wave.svg');
-    background-size: cover;
+.linkBtn:hover {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .navButton {
