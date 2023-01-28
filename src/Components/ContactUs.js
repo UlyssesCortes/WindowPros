@@ -7,13 +7,14 @@ const ContactUs = () => {
     return (
         <>
             <body className='wave'>
+
                 <div className='waveOutline'></div>
                 <Header />
                 <h1 className='slogan'>Get in Touch with Us</h1>
-
                 <div className='contactFormSec'>
                     <div className='avatar'>
                         <Spline scene="https://prod.spline.design/wpLwgZHZEi4N2iWv/scene.splinecode" />
+                        {/* <div className='AvatarLoadImg'></div> */}
                     </div>
                     <form className='formSec'>
                         <section className='topFormSec'>

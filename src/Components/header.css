@@ -26,7 +26,7 @@
 .whiteTittle {
     color: white;
     letter-spacing: 2px;
-    text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.1);
+    text-shadow: 2px 7px 5px rgba(93, 93, 93, 0.08);
 }
 
 .links {
@@ -68,7 +68,6 @@
 }
 
 .myNum {
-    text-align: center;
     letter-spacing: 5px;
     margin-right: 2em;
     color: rgba(0, 0, 0, .6);
@@ -79,6 +78,13 @@
     text-decoration: none;
 }
 
+.numContainer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 400px;
+    margin: auto;
+}
 
 .waveOutline {
     display: flex;
@@ -91,6 +97,8 @@
     background-image: url('./img/waveOutline.svg');
     background-size: cover;
 }
+
+
 
 .wave {
     display: flex;

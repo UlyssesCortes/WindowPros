@@ -24,7 +24,10 @@ const Header = () => {
                     </ul>
                 </section>
             </nav>
-            <a className='phoneLink' href="tel:+1234567890"><p className='myNum'>760-685-4653</p></a>
+            <div className='numContainer'>
+                <a className='phoneLink' href="tel:+1234567890"><p className='myNum'>760-685-4653</p></a>
+
+            </div>
         </>
     )
 }
