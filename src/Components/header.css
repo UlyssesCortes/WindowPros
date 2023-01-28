@@ -23,8 +23,10 @@
     list-style: none;
 }
 
-.title {
+.whiteTittle {
     color: white;
+    letter-spacing: 2px;
+    text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.1);
 }
 
 .links {
@@ -35,7 +37,6 @@
 
 .links:hover {
     border-bottom: solid 2px white;
-
 }
 
 .singUpB {
@@ -46,7 +47,6 @@
     text-decoration: none;
     background-color: white;
     color: #FCA253;
-
     padding: 10px;
 }
 
@@ -58,16 +58,32 @@
     text-decoration: none;
     color: white;
     padding: 10px;
+    width: 85px;
+
 }
 
-.signBtn {
-    color: white;
+.signBtn:hover,
+.singUpB:hover {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
+
+.myNum {
+    text-align: center;
+    letter-spacing: 5px;
+    margin-right: 2em;
+    color: rgba(0, 0, 0, .6);
+    text-shadow: 3px 2px 3px rgba(255, 255, 255, .2);
+}
+
+.phoneLink {
+    text-decoration: none;
+}
+
 
 .waveOutline {
     display: flex;
     justify-content: flex-start;
-    position: fixed;
+    position: absolute;
     display: inline-block;
     z-index: -1;
     width: 100%;
@@ -79,7 +95,7 @@
 .wave {
     display: flex;
     justify-content: flex-start;
-    position: fixed;
+    position: absolute;
     display: inline-block;
     z-index: -1;
     width: 100%;
