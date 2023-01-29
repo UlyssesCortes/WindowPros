@@ -11,6 +11,7 @@
     align-items: center;
     height: 60px;
     padding: 2.5em;
+
 }
 
 .navHeader {
@@ -23,6 +24,7 @@
     gap: 20px;
     list-style: none;
     margin-left: 5rem;
+    z-index: 1;
 }
 
 .titleHome {
@@ -82,6 +84,10 @@
     background-color: #FCA253;
 }
 
+body {
+    /* background-color: #FCA253; */
+}
+
 .linkBtn:hover {
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
@@ -97,4 +103,36 @@
     margin-right: 5px;
     width: 20px;
     height: 20px;
+}
+
+.whiteBox {
+    margin-left: 45%;
+    margin-top: 15%;
+    z-index: -1;
+    transform: rotate(60deg);
+    border-radius: 300px;
+    background-color: white;
+    height: 100vh;
+    width: 120%;
+}
+
+.blob {
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    display: inline-block;
+    z-index: -1;
+    width: 800px;
+    height: 800px;
+    margin-left: 50%;
+    background-size: cover;
+    background-image: url("./img/Blob.png");
+
+}
+
+.room {
+    display: flex;
+    height: 700px;
+    width: 100%;
+    margin-left: 20em;
 }

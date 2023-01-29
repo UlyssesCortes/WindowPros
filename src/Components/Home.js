@@ -1,9 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './home.css'
-
-
-
+import Spline from '@splinetool/react-spline';
 
 const Home = () => {
     return (
@@ -30,7 +28,12 @@ const Home = () => {
                 <div className='numContainer'>
                     <a className='phoneLink' href="tel:+1234567890"><p className='myNum'>760-685-4653</p></a>
                 </div>
-
+                <div className='blob'>
+                </div>
+                {/* <div className='whiteBox'></div> */}
+                {/* <div className='room'>
+                    <Spline scene="https://prod.spline.design/4tLOGQCh7rb6PG4C/scene.splinecode" />
+                </div> */}
             </body>
 
 
