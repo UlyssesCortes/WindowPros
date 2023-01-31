@@ -28,11 +28,6 @@ const Home = () => {
                 <div className='numContainer'>
                     <a className='phoneLink' href="tel:+7606854653"><p className='myNum'>760-685-4653</p></a>
                 </div>
-                {/* <div className='blob'></div> */}
-                {/* <div className='whiteBox'></div> */}
-                {/* <div className='room'>
-                    <Spline scene="https://prod.spline.design/4tLOGQCh7rb6PG4C/scene.splinecode" />
-                </div> */}
                 <ul class="background">
                     <li></li>
                     <li></li>
@@ -43,17 +38,24 @@ const Home = () => {
                 </ul>
                 <section className='mainContainer'>
                     <section className='titleAndSlogan '>
-                        <p className='homeSlogan highlight-container '>See the World Clearly with Clean Windows!</p>
+                        <p className='homeSlogan '>See the World Clearly with Clean Windows!</p>
                         <article>
-                            <p className='introductionPar realistic-marker-highlight'>We provide top-notch window cleaning with a focus on exceptional customer service and punctuality. Let us bring clarity to your view with our reliable and professional approach.</p>
+                            <p className='introductionPar'>We provide top-notch window cleaning with a focus on exceptional customer service and punctuality. Let us bring clarity to your view with our reliable and professional approach.</p>
                             <button className='quoteBtnHome'>Get a quote now!</button>
                         </article>
                     </section>
-
-                    <div className='test'></div>
+                    <section id='avatarContainer'>
+                        <div className='test'>
+                            <div className='avatarImg'></div>
+                        </div>
+                    </section>
                 </section>
 
-            </body>
+                <main>
+
+                </main>
+
+            </body >
 
 
         </>

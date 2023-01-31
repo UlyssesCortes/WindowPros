@@ -4,6 +4,7 @@ import './header.css'
 
 
 const Header = () => {
+    console.log("Header Loaded!")
 
     return (
         <>
