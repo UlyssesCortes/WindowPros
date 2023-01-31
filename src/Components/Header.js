@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import './header.css'
 
@@ -34,7 +34,7 @@ const Header = () => {
                 </section>
             </nav>
             <div className='numContainer'>
-                <a className='phoneLink' href="tel:+1234567890"><p className='myNum'>760-685-4653</p></a>
+                <a className='phoneLink' href="tel:+7606854653"><p className='myNum'>760-685-4653</p></a>
             </div>
         </>
     )

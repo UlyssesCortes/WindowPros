@@ -12,6 +12,14 @@ const Specials = () => {
 
                 <Header />
                 <h1 className='slogan'>Limited-Time Offers: Don't Miss Out!</h1>
+                <ul class="background">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
             </body>
 
         </>

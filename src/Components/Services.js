@@ -11,7 +11,16 @@ const Services = () => {
                 <div className='waveOutline'></div>
                 <Header />
                 <h1 className='slogan'>Expert Solutions for All Your Needs</h1>
+                <ul class="background">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
             </body>
+
         </>
     )
 }
