@@ -4,7 +4,6 @@ import './header.css'
 
 
 const Header = () => {
-    console.log("Header Loaded!")
 
     return (
         <>
@@ -12,6 +11,7 @@ const Header = () => {
                 <section className='navHeader'>
                     <div className='icon'></div>
                     <h1 className=' whiteTittle'>WindowPros</h1>
+
                     <ul className='navListHome'>
                         <li>
                             <NavLink end className={({ isActive }) => isActive ? "activeLinks" : "nonActiveLinks"} to='/'>Home</NavLink>

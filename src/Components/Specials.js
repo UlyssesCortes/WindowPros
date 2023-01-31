@@ -6,6 +6,9 @@ import './specials.css'
 const Specials = () => {
     return (
         <>
+            <head>
+                <title>WindowPros | Specials</title>
+            </head>
             <body className='wave'>
                 <div className='waveOutline'></div>
 

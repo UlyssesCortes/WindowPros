@@ -6,6 +6,9 @@ import './home.css'
 const Home = () => {
     return (
         <>
+            <head>
+                <title>WindowPros</title>
+            </head>
             <body>
                 <nav className='navHome'>
                     <section className='navHeader'>

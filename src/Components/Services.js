@@ -7,6 +7,9 @@ import './services.css'
 const Services = () => {
     return (
         <>
+            <head>
+                <title>WindowPros | Services</title>
+            </head>
             <body className='wave'>
                 <div className='waveOutline'></div>
                 <Header />

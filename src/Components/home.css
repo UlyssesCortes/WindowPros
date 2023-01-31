@@ -118,7 +118,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: auto;
-    width: 45%;
+    width: 50%;
     height: 60em;
 }
 
@@ -128,13 +128,14 @@ body {
     height: 100%;
     position: absolute;
     background-repeat: no-repeat;
-    margin-left: 65%;
+    margin-left: 70%;
+    margin-bottom: 5em;
 }
 
 .titleAndSlogan {
     display: flex;
     flex-direction: column;
-    width: 55%;
+    width: 50%;
 }
 
 .homeSlogan {

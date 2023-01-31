@@ -7,6 +7,9 @@ const ContactUs = () => {
 
     return (
         <>
+            <head>
+                <title>WindowPros | ContactUs</title>
+            </head>
             <body className='wave' >
                 <div className='waveOutline'></div>
                 <Header />
