@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './home.css'
 // import Spline from '@splinetool/react-spline';
 
@@ -16,7 +16,14 @@ const Home = () => {
                         <h1 className=' titleHome'>WindowPros</h1>
                         <ul className='navListHome'>
                             <li><Link id="homeLink" to='/'>Home</Link ></li>
-                            <li><Link className='linksHome' to='/Services'>Services</Link ></li>
+                            <li id='iconSec'>
+                                <NavLink end className={"linksHome servLink"} to='/Services'>Services<div className='arrowIcon'></div></NavLink>
+                                <div class="serviceDropDown homeDrop">
+                                    <NavLink end className={"linksHome drpoLinkHome"} to='/WindowCleaning'>WindowCleaning</NavLink>
+                                    <NavLink end className={"linksHome drpoLinkHome"} to='/Solar'>Solar Panel Cleaning</NavLink>
+                                    <NavLink end className={"linksHome drpoLinkHome"} to='/Christmas'>Christmas Light Setup</NavLink>
+                                </div>
+                            </li>
                             <li><Link className='linksHome' to='/Specials'>Specials</Link ></li>
                             <li><Link className='linksHome' to='/ContactUs'>ContactUs</Link ></li>
                         </ul>

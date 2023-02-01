@@ -25,8 +25,7 @@
 
 .fixed-header {
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
-    outline: auto;
-
+    /* outline: auto; */
 }
 
 .whiteTittle {
@@ -48,6 +47,13 @@
     padding-bottom: 5px;
 }
 
+.nonActiveLinks:hover {
+    text-decoration: none;
+    position: relative;
+    color: white;
+    padding-bottom: 5px;
+}
+
 .nonActiveLinks::after {
     content: '';
     position: absolute;
@@ -61,6 +67,55 @@
     transition: transform 0.25s ease-out;
 }
 
+.serviceDropDown {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    position: absolute;
+    visibility: hidden;
+    gap: 5px;
+    background-color: rgb(238, 238, 238);
+    margin-top: 2px;
+    padding-top: 15px;
+    padding: 12px 20px;
+}
+
+.homeDrop {
+    background-color: #fdf8f3;
+}
+
+.arrowIcon {
+    background-image: url('./img/down-arrow.png');
+    background-size: cover;
+    width: 10px;
+    height: 10px;
+}
+
+.drpoLinkHome {
+    color: black;
+}
+
+.dropLink {
+    color: rgb(99, 98, 98);
+}
+
+.dropLink:hover {
+    color: black;
+
+}
+
+.servLink:hover+.serviceDropDown {
+    display: flex;
+    flex-direction: column;
+    /* display: block; */
+    visibility: visible;
+}
+
+.serviceDropDown:hover {
+    visibility: visible;
+
+}
 
 .nonActiveLinks:hover::after {
     transform: scaleX(1);
@@ -101,6 +156,8 @@
     color: rgba(0, 0, 0, .6);
     text-shadow: 3px 2px 3px rgba(255, 255, 255, .2);
     margin-top: 80px;
+    z-index: 2;
+    /* outline: auto; */
 }
 
 .phoneLink {
@@ -111,7 +168,7 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    width: 400px;
+    width: 450px;
     margin: auto;
 }
 
