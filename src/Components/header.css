@@ -25,7 +25,6 @@
 
 .fixed-header {
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
-    /* outline: auto; */
 }
 
 .whiteTittle {
@@ -108,7 +107,6 @@
 .servLink:hover+.serviceDropDown {
     display: flex;
     flex-direction: column;
-    /* display: block; */
     visibility: visible;
 }
 
@@ -157,11 +155,12 @@
     text-shadow: 3px 2px 3px rgba(255, 255, 255, .2);
     margin-top: 80px;
     z-index: 2;
-    /* outline: auto; */
 }
 
 .phoneLink {
     text-decoration: none;
+    z-index: 2;
+
 }
 
 .numContainer {
