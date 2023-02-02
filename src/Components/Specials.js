@@ -24,13 +24,9 @@ const Specials = () => {
                     <li></li>
                     <li></li>
                 </ul>
-                <section className='mainContainer'>
-                    <section id='avatarContainer'>
-                        <div className='test'>
-                            <div className='avatarImg'></div>
-                        </div>
-                    </section>
-                </section>
+                <main>
+                    <h1>dfsd</h1>
+                </main>
             </body>
 
         </>

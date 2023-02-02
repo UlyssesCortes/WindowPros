@@ -44,8 +44,8 @@
     position: relative;
     margin: auto;
     margin-top: 100px;
-    animation-name: fade;
-    animation-duration: 1.5s;
+    /* animation-name: fade;
+    animation-duration: 1.5s; */
     /* display: none; */
 }
 
@@ -73,7 +73,12 @@
 
 .nextBtn:hover {
     background-color: grey;
-    opacity: 0.9;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 

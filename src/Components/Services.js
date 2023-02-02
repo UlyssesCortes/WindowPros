@@ -8,13 +8,6 @@ const Services = () => {
     const [isActive2, setIsActive2] = useState(false)
     const [isActive3, setIsActive3] = useState(false)
 
-    // const imgIsActive = (element, isActiveNum) => {
-    //     let curElement = document.getElementById(`${element}`)
-    //     if (isActiveNum) {
-    //         curElement.classList.add("active")
-    //     }
-    // }
-
     const divClicked = (divClassName, setActiveNum1, setActiveNum2) => {
         let div = document.getElementsByClassName(divClassName);
         div.addEventListener("click",
@@ -42,7 +35,7 @@ const Services = () => {
                 </ul>
                 <section className="slideshow-container">
                     {isActive1 &&
-                        <div className="mySlides">
+                        <div className="mySlides fade">
                             <div className="numbertext">1 / 3</div>
                             <img src='https://www.w3schools.com/w3css/img_mountains_wide.jpg' alt='hello' style={{ width: "100%" }} />
                             <div className='nextBtn' onClick={() => {
@@ -51,7 +44,7 @@ const Services = () => {
                         </div>
                     }
                     {isActive2 &&
-                        <div className="mySlides">
+                        <div className="mySlides fade">
                             <div className="numbertext">2 / 3</div>
                             <img src='https://images.unsplash.com/photo-1499346030926-9a72daac6c63?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&w=1000&q=80' alt='hello' style={{ width: "100%" }} />
                             <div className='nextBtn' onClick={() => {
@@ -61,7 +54,7 @@ const Services = () => {
                     }
 
                     {isActive3 &&
-                        <div className="mySlides">
+                        <div className="mySlides fade">
                             <div className="numbertext">3 / 3</div>
                             <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO57MdsRoynBqbS5XTOvevmbfToaanVQwo98xgbFbf5A&s' alt='hello' style={{ width: "100%" }} />
                             <div className='nextBtn' onClick={() => {

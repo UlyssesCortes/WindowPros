@@ -5,3 +5,7 @@
 .servicesSelected {
     border-bottom: solid 2px transparent;
 }
+
+main {
+    margin-top: 7em;
+}
