@@ -174,7 +174,7 @@
 .waveOutline {
     display: flex;
     justify-content: flex-start;
-    position: absolute;
+    /* position: absolute; */
     display: inline-block;
     z-index: -1;
     width: 100%;
@@ -186,7 +186,7 @@
 .wave {
     display: flex;
     justify-content: flex-start;
-    position: absolute;
+    /* position: absolute; */
     display: inline-block;
     z-index: -1;
     width: 100%;

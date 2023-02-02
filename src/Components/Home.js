@@ -61,10 +61,6 @@ const Home = () => {
                     </section>
                 </section>
 
-                <main>
-
-                </main>
-
             </body >
 
 

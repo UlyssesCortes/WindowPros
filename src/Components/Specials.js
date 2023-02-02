@@ -4,6 +4,8 @@ import './specials.css'
 
 
 const Specials = () => {
+
+
     return (
         <>
             <head>
@@ -22,6 +24,13 @@ const Specials = () => {
                     <li></li>
                     <li></li>
                 </ul>
+                <section className='mainContainer'>
+                    <section id='avatarContainer'>
+                        <div className='test'>
+                            <div className='avatarImg'></div>
+                        </div>
+                    </section>
+                </section>
             </body>
 
         </>
