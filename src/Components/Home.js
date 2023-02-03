@@ -4,6 +4,7 @@ import './home.css'
 // import Spline from '@splinetool/react-spline';
 
 const Home = () => {
+
     return (
         <>
             <head>

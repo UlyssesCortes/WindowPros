@@ -25,7 +25,7 @@ const Specials = () => {
                     <li></li>
                 </ul>
                 <main>
-                    <h1>dfsd</h1>
+
                 </main>
             </body>
 

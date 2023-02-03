@@ -7,5 +7,6 @@
 }
 
 main {
+    /* Do this to prevent the header img to distor */
     margin-top: 7em;
 }
