@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./Header";
 
 const Window = () => {
+    const [openForm, setOpenForm] = useState(false)
+    const btnClicked = () => {
+        setOpenForm(!openForm)
+    }
     return (
         <>
             <head>
@@ -21,27 +25,26 @@ const Window = () => {
                     <li></li>
                 </ul>
                 <div className="blokBig">
+                    <button onClick={() => btnClicked()} className='quoteBtnHome'>Get a quote now!</button>
 
                 </div>
-
-                <section className="modalSection">
-                    <a href="#modal-opened" class="link-1" id="modal-closed">Open Modal</a>
+                {openForm &&
                     <div class="containerModal" id="modal-opened">
                         <div class="modal">
 
                             <div class="details">
-                                <h1 class="title">Your Title</h1>
-                                <p class="description">Slogan will be here at this place.</p>
+                                <h1 class="title">Get your quote</h1>
+                                <p class="description">Get an Accurate Quote, Quick and Easy!</p>
                             </div>
 
                             <p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ex dicta maiores libero minus obcaecati iste optio, eius labore repellendus.</p>
 
                             <button class="btnModal">Button &rarr;</button>
 
-                            <a href="#modal-closed" class="link-2"></a>
+                            <button onClick={() => btnClicked()} class="link-2"></button>
                         </div>
                     </div>
-                </section>
+                }
             </body >
 
         </>

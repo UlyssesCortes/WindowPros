@@ -44,9 +44,6 @@
     position: relative;
     margin: auto;
     margin-top: 100px;
-    /* animation-name: fade;
-    animation-duration: 1.5s; */
-    /* display: none; */
 }
 
 .image1 {
@@ -81,7 +78,6 @@
     animation-duration: 1.5s;
 }
 
-
 .active {
     display: block;
     height: 300px;
@@ -101,26 +97,6 @@
     }
 }
 
-/* 
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
-
-/* html {
-  font-size: 62.5%;
-}
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', sans-serif;
-  min-height: 100vh;
-} */
-
 a,
 a:link {
     font-family: inherit;
@@ -129,10 +105,11 @@ a:link {
 
 .containerModal {
     position: fixed;
+    display: flex;
     top: 0;
     left: 0;
     z-index: 10;
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -148,7 +125,11 @@ a:link {
     padding: 4rem 2rem;
     border-radius: .8rem;
     color: hsl(0, 0%, 100%);
-    background: linear-gradient(to right bottom, #009FFF, #ec2F4B);
+    /* background: linear-gradient(to right bottom, #009FFF, #ec2F4B); */
+    /* background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%); */
+    background: linear-gradient(90deg, #626466 0%, #373c47 100%);
+    /* background: linear-gradient(90deg, #666666 0%, #5c5e63 100%); */
+    /* background: linear-gradient(90deg, rgba(255, 162, 21, 1) 0%, rgba(245, 216, 115, 1) 100%); */
     box-shadow: .4rem .4rem 2.4rem .2rem hsla(236, 50%, 50%, 0.3);
     position: relative;
     overflow: hidden;
@@ -167,7 +148,7 @@ a:link {
 
 .description {
     margin-top: 2rem;
-    font-size: 1.6rem;
+    font-size: 1rem;
     font-style: italic;
 }
 
@@ -178,6 +159,7 @@ a:link {
     line-height: 2;
 }
 
+/* Cool corner  */
 .txt::before {
     content: '';
     position: absolute;
@@ -229,10 +211,12 @@ a:link {
     box-shadow: 0 0 4.4rem .2rem hsla(236, 50%, 50%, 0.4);
 }
 
+
 .link-2 {
     width: 4rem;
     height: 4rem;
     border: 1px solid hsla(0, 0%, 100%, .4);
+    background-color: transparent;
     border-radius: 100rem;
     color: inherit;
     font-size: 2.2rem;
@@ -242,7 +226,6 @@ a:link {
     display: flex;
     justify-content: center;
     align-items: center;
-
     transition: .2s;
 }
 
@@ -251,6 +234,7 @@ a:link {
     -webkit-transform: translateY(-.1rem);
     transform: translateY(-.1rem);
 }
+
 
 .link-2:hover,
 .link-2:focus {

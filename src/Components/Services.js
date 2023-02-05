@@ -7,6 +7,8 @@ const Services = () => {
     const [isActive1, setIsActive1] = useState(true)
     const [isActive2, setIsActive2] = useState(false)
     const [isActive3, setIsActive3] = useState(false)
+    const [openForm, setOpenForm] = useState(false)
+
 
     const divClicked = (divClassName, setActiveNum1, setActiveNum2) => {
         let div = document.getElementsByClassName(divClassName);
@@ -14,6 +16,10 @@ const Services = () => {
             setActiveNum1(false),
             setActiveNum2(true)
         )
+    }
+
+    const btnClicked = () => {
+        setOpenForm(!openForm)
     }
 
     return (
@@ -62,27 +68,29 @@ const Services = () => {
                             }}>Next</div>
                         </div>
                     }
+                    <button onClick={() => btnClicked()} className='quoteBtnHome'>Get a quote now!</button>
                 </section>
 
-            </body>
-            <section className="modalSection">
-                <a href="#modal-opened" class="link-1" id="modal-closed">Open Modal</a>
-                <div class="containerModal" id="modal-opened">
-                    <div class="modal">
 
-                        <div class="details">
-                            <h1 class="title">Your Title</h1>
-                            <p class="description">Slogan will be here at this place.</p>
+                {openForm &&
+                    <div class="containerModal" id="modal-opened">
+                        <div class="modal">
+
+                            <div class="details">
+                                <h1 class="title">Get your quote</h1>
+                                <p class="description">Get an Accurate Quote, Quick and Easy!</p>
+                            </div>
+
+                            <p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ex dicta maiores libero minus obcaecati iste optio, eius labore repellendus.</p>
+
+                            <button class="btnModal">Button &rarr;</button>
+
+                            <button onClick={() => btnClicked()} class="link-2"></button>
                         </div>
-
-                        <p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ex dicta maiores libero minus obcaecati iste optio, eius labore repellendus.</p>
-
-                        <button class="btnModal">Button &rarr;</button>
-
-                        <a href="#modal-closed" class="link-2"></a>
                     </div>
-                </div>
-            </section>
+                }
+            </body>
+
         </>
     )
 }

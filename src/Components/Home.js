@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import './home.css'
 // import Spline from '@splinetool/react-spline';
 
 const Home = () => {
+    const [openForm, setOpenForm] = useState(false)
+    const btnClicked = () => {
+        setOpenForm(!openForm)
+        console.log(!openForm)
+    }
 
     return (
         <>
@@ -49,10 +54,10 @@ const Home = () => {
                 </ul>
                 <section className='mainContainer'>
                     <section className='titleAndSlogan '>
-                        <p className='homeSlogan '>See the World Clearly with Clean Windows!</p>
+                        <p className='homeSlogan '>Experience the Sparkle of Clean Windows!</p>
                         <article>
                             <p className='introductionPar'>We provide top-notch window cleaning with a focus on exceptional customer service and punctuality. Let us bring clarity to your view with our reliable and professional approach.</p>
-                            <button className='quoteBtnHome'>Get a quote now!</button>
+                            <button onClick={() => btnClicked()} className='quoteBtnHome'>Get a quote now!</button>
                         </article>
                     </section>
                     <section id='avatarContainer'>
@@ -61,6 +66,25 @@ const Home = () => {
                         </div>
                     </section>
                 </section>
+
+                {openForm &&
+                    <div class="containerModal" id="modal-opened">
+                        <div class="modal">
+
+                            <div class="details">
+                                <h1 class="title">Get your quote</h1>
+                                <p class="description">Get an Accurate Quote, Quick and Easy!</p>
+                            </div>
+
+                            <p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ex dicta maiores libero minus obcaecati iste optio, eius labore repellendus.</p>
+
+                            <button class="btnModal">Button &rarr;</button>
+
+                            <button onClick={() => btnClicked()} class="link-2"></button>
+                        </div>
+                    </div>
+                }
+
 
             </body >
 
