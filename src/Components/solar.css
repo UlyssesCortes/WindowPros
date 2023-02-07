@@ -5,21 +5,58 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/solarPanel.jpg");
-    height: 100vh;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+body {
+    /* background-color: #000; */
+    font-family: Arial;
 }
 
-.hero-text {
-    text-align: center;
+.hero-banner {
+    background-color: black;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    position: relative;
+    justify-content: center;
+    z-index: -1;
+}
+
+.hero-banner__title {
+    color: #fff;
+    font-size: 100px;
+    font-weight: 700;
+    padding: 0 20px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.hero-banner__stroked-title {
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+    text-stroke: 2px white;
+}
+
+.hero-banner__image {
+    border-radius: 20px;
+    position: fixed;
+    transform: rotate(-15deg);
+    width: 450px;
+    /* z-index: -0; */
+}
+
+.contents {
+    background-color: #eaeaea;
+    /* font-size: 40px; */
+    /* padding: 120px 80px; */
+    height: 100vh;
+    /* z-index: 999; */
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    z-index: 1;
 }

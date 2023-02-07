@@ -181,6 +181,7 @@ body {
     padding: .75em 2em;
     position: relative;
     text-transform: uppercase;
+
 }
 
 .quoteBtnHome::before {

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@react-spring/web": "^9.6.1",
     "@splinetool/react-spline": "^2.2.5",
     "@splinetool/runtime": "^0.9.200",
     "@testing-library/jest-dom": "^5.16.5",
